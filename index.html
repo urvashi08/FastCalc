@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="calculator-container">
+      <div id="steps"></div>
+      <input type="text" id="display" class="form-control" readonly>
+      <div class="btn-grid">
+        <button class="btn" data-value="C" onclick="clearDisplay()">C</button>
+        <button class="btn" data-value="DEL" onclick="removeLastCharacter()">DEL</button>
+        <button class="btn" data-value="%" onclick="appendValue('%')">%</button>
+        <button class="btn" data-value="/" onclick="appendValue('/')">÷</button>
+        <button class="btn" data-value="7" onclick="appendValue('7')">7</button>
+        <button class="btn" data-value="8" onclick="appendValue('8')">8</button>
+        <button class="btn" data-value="9" onclick="appendValue('9')">9</button>
+        <button class="btn" data-value="*" onclick="appendValue('*')">x</button>
+        <button class="btn" data-value="4" onclick="appendValue('4')">4</button>
+        <button class="btn" data-value="5" onclick="appendValue('5')">5</button>
+        <button class="btn" data-value="6" onclick="appendValue('6')">6</button>
+        <button class="btn" data-value="-" onclick="appendValue('-')">-</button>
+        <button class="btn" data-value="1" onclick="appendValue('1')">1</button>
+        <button class="btn" data-value="2" onclick="appendValue('2')">2</button>
+        <button class="btn" data-value="3" onclick="appendValue('3')">3</button>
+        <button class="btn" data-value="+" onclick="appendValue('+')">+</button>
+        <button class="btn" data-value="0" onclick="appendValue('0')">0</button>
+        <button class="btn" data-value="." onclick="appendValue('.')">.</button>
+        <button class="btn span-2" data-value="=" onclick="calculate()">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

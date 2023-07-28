@@ -1,0 +1,84 @@
+.calculator-container {
+    margin-top: 50px;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.btn {
+    font-size: 20px;
+    height: 77px;
+    background-color: #d3d3d3;
+    font-weight: 500;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn[data-value="0"],
+.btn[data-value="1"],
+.btn[data-value="2"],
+.btn[data-value="3"],
+.btn[data-value="4"],
+.btn[data-value="5"],
+.btn[data-value="6"],
+.btn[data-value="7"],
+.btn[data-value="8"],
+.btn[data-value="9"] {
+    background-color: #f4f4f4;
+}
+
+.btn[data-value="+"],
+.btn[data-value="-"],
+.btn[data-value="*"],
+.btn[data-value="/"],
+.btn[data-value="%"],
+.btn[data-value="="],
+.btn[data-value="C"],
+.btn[data-value="DEL"],
+.btn[data-value="."] {
+    background-color: #cfecff;
+}
+
+.btn[data-value="="] {
+    background-color: #0079eb;
+    color:white;
+}
+
+#display {
+    font-size: 42px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 5px;
+    background-color: white;
+    grid-column: span 4;
+    height: 100px;
+}
+
+#steps {
+    font-size: 16px;
+    text-align: right;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fff;
+    grid-column: span 4;
+    height: 40px;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
